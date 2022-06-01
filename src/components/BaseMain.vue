@@ -15,45 +15,45 @@
 </template>
 
 <script>
-export default {
-    name: 'BaseMain',
-    data() {
-        return {
-            links: [
-                {
-                    text: "digital comics",
-                    url: "#",
-                    img: "buy-comics-digital-comics.png",
-                    current: false,
-                },
-                {
-                    text: "dc merchandise",
-                    url: "#",
-                    img: "../assets/img/buy-comics-merchandise.png",
-                    current: true,
-                },
-                {
-                    text: "subscription",
-                    url: "#",
-                    img: "../assets/img/buy-comics-subscriptions.png",
-                    current: false,
-                },
-                {
-                    text: "comic shop location",
-                    url: "#",
-                    img: "../assets/img/buy-comics-shop-locator.png",
-                    current: false,
-                },
-                {
-                    text: "dc power visa",
-                    url: "#",
-                    img: "../assets/img/buy-dc-power-visa.png",
-                    current: false,
-                },
-            ],
-        }
-    },
-}
+    export default {
+        name: 'BaseMain',
+        data() {
+            return {
+                links: [
+                    {
+                        text: "digital comics",
+                        url: "#",
+                        img: "buy-comics-digital-comics.png",
+                        current: false,
+                    },
+                    {
+                        text: "dc merchandise",
+                        url: "#",
+                        img: "../assets/img/buy-comics-merchandise.png",
+                        current: true,
+                    },
+                    {
+                        text: "subscription",
+                        url: "#",
+                        img: "../assets/img/buy-comics-subscriptions.png",
+                        current: false,
+                    },
+                    {
+                        text: "comic shop location",
+                        url: "#",
+                        img: "../assets/img/buy-comics-shop-locator.png",
+                        current: false,
+                    },
+                    {
+                        text: "dc power visa",
+                        url: "#",
+                        img: "../assets/img/buy-dc-power-visa.png",
+                        current: false,
+                    },
+                ],
+            }
+        },
+    }
 </script>
 
 <style lang="scss">
