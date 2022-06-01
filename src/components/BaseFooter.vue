@@ -1,6 +1,6 @@
 <template>
-    <footer>
-        
+    <footer class="frame">
+
         <div class="footer__nav">
             <div class="link-group-1">
                 <h3>dc comics</h3>

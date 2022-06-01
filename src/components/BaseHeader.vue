@@ -1,10 +1,10 @@
 <template>
-    <header>
+    <header class="frame">
         <div class="header__logo">
             <img src="../assets/img/dc-logo.png">
         </div>
         <div class="header__nav">
-            <ul>
+            <ul class="header__list">
                 <li v-for="(link, index) in links" :key="index" :class="{active : link.current}">
                     <a :href="link.url">{{link.text}}</a>
                 </li>
@@ -75,6 +75,32 @@
     }
 </script>
 
-<style>
-
+<style lang="scss">
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        .header__logo {
+            width: 80px;
+            height: 80px;            
+            & img {
+                max-width: 100%;
+            }
+        }
+        .header__list {
+            display: flex;
+            list-style: none;
+            & li {
+                padding: 40px 10px;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+            .active {
+                border-bottom: 3px solid #0282f9;
+            }
+        }
+    }
 </style>

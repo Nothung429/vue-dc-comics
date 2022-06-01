@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="frame">
         <div class="wip">
             <h3>--> Content go here</h3>
         </div>
@@ -58,8 +58,11 @@
 
 <style lang="scss">
     .wip {
-        background-color: red;
+        background-color: #1c1c1c;
         width: 100%;
         height: 100px;
+    }
+    .main__nav {
+        background-color: #0282f9;
     }
 </style>
