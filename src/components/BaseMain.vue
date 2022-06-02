@@ -1,15 +1,23 @@
 <template>
-    <main class="frame">
-        <div class="wip">
-            <h3>--> Content go here</h3>
+    <main>
+        <div class="wip__bg">
+            <div class="frame">
+                <div class="wip">
+                    <h3>--> Content go here --></h3>
+                </div>
+            </div>
         </div>
-        <div class="main__nav">
-            <ul>
-                <li v-for="(link, index) in links" :key="index" :class="{active : link.current}">
-                    <img :src="link.img" alt="main-li-img">
-                    <a :href="link.url">{{link.text}}</a>
-                </li>
-            </ul>
+        <div class="main__nav__bg">
+            <div class="frame">
+                <div class="main__nav">
+                    <ul>
+                        <li v-for="(link, index) in links" :key="index" :class="{active : link.current}">
+                            <img :src="link.img" alt="main-li-img">
+                            <a :href="link.url">{{link.text}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
 </template>
@@ -29,7 +37,7 @@
                     {
                         text: "dc merchandise",
                         url: "#",
-                        img: "../assets/img/buy-comics-merchandise.png",
+                        img: "img/buy-comics-merchandise.png",
                         current: true,
                     },
                     {
@@ -57,12 +65,40 @@
 </script>
 
 <style lang="scss">
-    .wip {
+    .wip__bg {
         background-color: #1c1c1c;
-        width: 100%;
+    }
+    .wip {
         height: 100px;
+        h3 {
+            text-align: center;
+            line-height: 100px;
+            color: #fff;
+        }
+    }
+    .main__nav__bg {
+        background-color: #0282f9;
     }
     .main__nav {
-        background-color: #0282f9;
+        display: flex;
+        justify-content: center;
+        & ul {
+            display: flex;
+            justify-content: center;
+            & li {
+            padding: 40px 10px;
+            display: flex;
+            align-items: center;
+                a {
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 </style>

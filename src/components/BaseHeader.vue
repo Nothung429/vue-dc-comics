@@ -80,7 +80,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100px;
         .header__logo {
             width: 80px;
             height: 80px;            
@@ -90,16 +89,16 @@
         }
         .header__list {
             display: flex;
-            list-style: none;
             & li {
                 padding: 40px 10px;
                 a {
-                    text-decoration: none;
-                    color: #000;
+                    text-transform: uppercase;
+                    color: inherit;
                 }
             }
             .active {
                 border-bottom: 3px solid #0282f9;
+                color: #0282f9;
             }
         }
     }
