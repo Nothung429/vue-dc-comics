@@ -43,9 +43,7 @@
                             </div>
                         </div>
                     </div>                    
-                    <div class="footer__nav__img">
-                        <img src="../assets/img/dc-logo-bg.png" alt="">
-                    </div>
+                    <div class="footer__nav__img"></div>
                 </div>
             </div>            
         </div>
@@ -60,7 +58,7 @@
                         <h3>FOLLOW US</h3>
                         <ul>
                             <li v-for="(link, index) in socialLinks" :key="index" :class="{active : link.current}">
-                                <img :src="`link.img`" alt="footer-li-img">
+                                <img :src="link.img" alt="footer-li-img">
                             </li>
                         </ul>
                     </div>
@@ -210,27 +208,27 @@
                 ],
                 socialLinks: [
                     {
-                        img: "../assets/img/footer-facebook.png",
+                        img: require("../assets/img/footer-facebook.png"),
                         url: "#",
                         current: true,
                     },
                     {
-                        img: "../assets/img/footer-twitter.png",
+                        img: require("../assets/img/footer-twitter.png"),
                         url: "#",
                         current: true,
                     },
                     {
-                        img: "../assets/img/footer-youtube.png",
+                        img: require("../assets/img/footer-youtube.png"),
                         url: "#",
                         current: true,
                     },
                     {
-                        img: "../assets/img/footer-pinterest.png",
+                        img: require("../assets/img/footer-pinterest.png"),
                         url: "#",
                         current: true,
                     },
                     {
-                        img: "../assets/img/footer-periscope.png",
+                        img: require("../assets/img/footer-periscope.png"),
                         url: "#",
                         current: true,
                     },
@@ -267,10 +265,11 @@
             color: #fff;
         }
         &__img {
-            max-width: 400px;
-            img {
-                width: 100%;
-            }
+            background-image: url("../assets/img/dc-logo-bg.png");
+            height: 400px;
+            width: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
     .footer__social__bg {
@@ -307,8 +306,8 @@
                 align-items: center;
                 & li {
                     img {
-                        width: 80px;
-                        height: 80px;
+                        width: 40px;
+                        height: 40px;
                         margin-right: 10px;
                     }
                 }

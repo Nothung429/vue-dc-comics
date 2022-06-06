@@ -31,31 +31,31 @@
                     {
                         text: "digital comics",
                         url: "#",
-                        img: "buy-comics-digital-comics.png",
+                        img: require("../assets/img/buy-comics-digital-comics.png"),
                         current: false,
                     },
                     {
                         text: "dc merchandise",
                         url: "#",
-                        img: "img/buy-comics-merchandise.png",
+                        img: require("../assets/img/buy-comics-merchandise.png"),
                         current: true,
                     },
                     {
                         text: "subscription",
                         url: "#",
-                        img: "../assets/img/buy-comics-subscriptions.png",
+                        img: require("../assets/img/buy-comics-subscriptions.png"),
                         current: false,
                     },
                     {
                         text: "comic shop location",
                         url: "#",
-                        img: "../assets/img/buy-comics-shop-locator.png",
+                        img: require("../assets/img/buy-comics-shop-locator.png"),
                         current: false,
                     },
                     {
                         text: "dc power visa",
                         url: "#",
-                        img: "../assets/img/buy-dc-power-visa.png",
+                        img: require("../assets/img/buy-dc-power-visa.svg"),
                         current: false,
                     },
                 ],
@@ -69,10 +69,10 @@
         background-color: #1c1c1c;
     }
     .wip {
-        height: 100px;
+        height: 172px;
         h3 {
             text-align: center;
-            line-height: 100px;
+            line-height: 172px;
             color: #fff;
         }
     }
@@ -94,8 +94,6 @@
                     color: #fff;
                 }
                 img {
-                    width: 80px;
-                    height: 80px;
                     margin-right: 10px;
                 }
             }

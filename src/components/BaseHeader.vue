@@ -96,7 +96,7 @@
                     color: inherit;
                 }
             }
-            .active {
+            .active ,li:hover {
                 border-bottom: 3px solid #0282f9;
                 color: #0282f9;
             }
