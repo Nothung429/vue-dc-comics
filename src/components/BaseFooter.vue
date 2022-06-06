@@ -255,6 +255,9 @@
             a {
                 color: #959588;
             }
+            a:hover {
+                color: #fff;
+            }
             .link-group-1 {
                 margin-bottom: 20px;
             }
